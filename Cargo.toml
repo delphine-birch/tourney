@@ -2,11 +2,12 @@
 name = "tourney"
 version = "0.1.0"
 edition = "2021"
+license = "MIT"
+description = "A small package for generating and simulating tournaments of various structures"
+repository = "https://github.com/delphine-birch/tourney"
+readme = "README.md"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
 rand = "0.8.5"
-
-[profile.release]
-debug = true
