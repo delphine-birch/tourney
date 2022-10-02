@@ -1,6 +1,6 @@
 [package]
 name = "tourney"
-version = "0.2.1"
+version = "0.2.2"
 edition = "2021"
 license = "MIT"
 description = "A small package for generating and simulating tournaments of various structures"

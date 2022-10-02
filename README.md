@@ -10,7 +10,7 @@ The package is currently very barebones, but in future it will hopefully contain
 ## Basic Example
 To get started with Tourney, you're first going to want to design your tournament structure - here we'll design a simple 8 person single elimination tournament with only 1 recognised winner (no 2nd, 3rd places).
 
-```
+```rust
 //Tournaments need two generic usize parameters - first, the number of contestants
     //in each match (Two, in our case), and the number of final recognised placement
     //positions.
