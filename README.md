@@ -1,13 +1,13 @@
-#Tourney
+# Tourney
 
-##Overview
+## Overview
 Tourney is a small rust package designed to help deal with a specific, niche issue that I've come up against a few times - generically programming and formatting tournaments.
 
 Tourney can't quite create any format of tournament - the limitations currently are that each match within the tournament must have the same number of contestants, and that each match must provide a specific ordering of each of its contestants once done (though this doesn't need to be an ordering from winner to loser).
 
 The package is currently very barebones, but in future it will hopefully contain some functions both for visualising tournament structures in the command line and for creating default versions of some common tournament types (single/double elimination, round robin, etc.)
 
-##Basic Example
+## Basic Example
 To get started with Tourney, you're first going to want to design your tournament structure - here we'll design a simple 8 person single elimination tournament with only 1 recognised winner (no 2nd, 3rd places).
 
 ```
