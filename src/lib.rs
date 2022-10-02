@@ -7,9 +7,9 @@ use std::collections::HashMap;
 //COMPETITOR
 pub struct Competitor {
     //ID FOR REGISTER
-    id: u32,
+    pub id: u32,
     //STATS - UPDATED BY TOURNAMENT RUNNER PER MATCH
-    _stats: Vec<f32>,
+    pub _stats: Vec<f32>,
 }
 
 impl Competitor {
@@ -35,15 +35,15 @@ pub enum MatchOutcome {
 #[derive(Clone)]
 pub struct Match<const N: usize> {
     //ID FOR REGISTER
-    id: u32,
+    pub id: u32,
     //STAGE - OPTIONAL, MATCHES OF STAGE X REQUIRE ALL MATCHES OF STAGE X-1 COMPLETE (IF STAGE IS EMPTY, AUTO COMPLETE)
-    stage: Option<u32>,
+    pub stage: Option<u32>,
     //MATCH COMPLETED - IMPLEMENTED SO MATCHES COMPETITOR LIST EXISTS AS RECORD OF OUTCOMES
-    done: bool,
+    pub done: bool,
     //COMPETITOR INDICES FOR REGISTER
-    competitors: [Option<u32>; N],
+    pub competitors: [Option<u32>; N],
     //OUTCOMES
-    outcomes: [MatchOutcome; N],
+    pub outcomes: [MatchOutcome; N],
 }
 //IMPLEMENTING REGISTER TRAIT
 impl<const N: usize> Identify for Match<N> {
