@@ -13,11 +13,7 @@ pub struct Competitor {
 }
 
 impl Competitor {
-    pub fn new(i: &u32, s: &Vec<f32>) -> Self {
-        let id = i.clone();
-        let _stats = s.clone();
-        Self { id, _stats }
-    }
+    pub fn new(v: Vec<f32>) -> Self { Self { id: 0, _stats: v } }
 }
 //IMPLEMENTING REGISTER TRAIT 
 impl Identify for Competitor {
